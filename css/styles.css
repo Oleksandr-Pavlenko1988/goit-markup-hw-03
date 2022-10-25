@@ -141,7 +141,7 @@ body {
     align-items: start;
 }
 .features-card {
-    width: 270px;
+    flex-basis: calc((100%-90px)/4);
 }
 .features-heading {
     margin-bottom: 10px;
@@ -152,7 +152,6 @@ body {
 }
 
 /* examples */
-
 .examples-flex {
     display: flex;
     gap: 30px;
@@ -229,7 +228,7 @@ body {
     color: var(--accent-color);
 }
 
-/* портфоліо */
+/* portfolio */
 .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
