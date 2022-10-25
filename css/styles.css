@@ -36,6 +36,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border: 1px solid #ECECEC;
 }
 .container {
     width: 1200px;
@@ -43,7 +44,15 @@ body {
     padding: 0 15px;
 
 }
+.header-flex {
+    display: flex;
+    align-items: center;
+}
+.list-style .item:not(:first-child) {
+    margin-left: 50px;
+}
 .header-logo {
+    margin-right: 93px;
     color: #000000;
     text-decoration: none;
     font-family: 'Raleway';
@@ -66,6 +75,12 @@ body {
 .nav:focus {
     color: var(--accent-color);
 }
+.contact-list {
+    margin-left: auto;
+}
+.contact-item:first-child {
+    margin-right: 50px;
+}
 .contact-header {
     color: inherit;
     text-decoration: none;
@@ -74,17 +89,20 @@ body {
 .contact-header:focus {
     color: var(--accent-color);
 }
-
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* main */
-.section-hero {
+.hero {
     padding: 200px 0;
     background-color: #2F303A;
 }
-.hero {
+.hero-title {
     margin-top: 0;
     margin-bottom: 30px;
-    color: var(--primary-white-color);
     
+    color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -93,6 +111,10 @@ body {
     text-transform: uppercase;
 }
 .button-order {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     cursor: pointer;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
@@ -103,14 +125,12 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.06em;
 }
 
 /* features */
-.section-features {
-    padding-top: 94px;
+.features {
+    padding-bottom: 0;
 }
 .features-heading {
     margin-bottom: 10px;
@@ -121,9 +141,7 @@ body {
 }
 
 /* examples */
-.section-examples {
-    padding-top: 94px;
-}
+
 .examples-heading {
     margin-bottom: 50px;
     color: var(--header-color);
@@ -133,9 +151,7 @@ body {
 }
 
 /* team */
-.section-team{
-    padding-top: 94px;
-    padding-bottom: 94px;
+.team {
     background-color: #F5F4FA;
 }
 .team-heading {
@@ -204,11 +220,19 @@ body {
     padding-bottom: 94px;
 }
 .button-list {
+    display: flex;
+    justify-content: center;
+
     margin-bottom: 50px;
 }
+.list-style .card:not(:first-child) {
+    margin-left: 9px;
+}
 .button {
+    padding: 6px 22px;
     background: #F5F4FA;
     border-radius: 4px;
+    border: none;
     color: var(--header-color);
     font-family: inherit;
     font-weight: 500;
@@ -222,16 +246,23 @@ body {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
-.list-item {
-    padding: 20px 24px;
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
 }
-.portfolio-header {    
+.img {
+    display: block;
+}
+.portfolio-headers {    
     color: var(--header-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 .portfolio-description {
+    margin-top: 4px;
     font-size: 16px;
     line-height: 1.88;
 }
