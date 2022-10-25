@@ -33,18 +33,17 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 /* header */
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
     border: 1px solid #ECECEC;
-}
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-
 }
 .header-flex {
     display: flex;
@@ -95,6 +94,7 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 /* main */
 .hero {
     padding: 200px 0;
