@@ -131,6 +131,10 @@ body {
     line-height: 1.88;
     letter-spacing: 0.06em;
 }
+.button-order:hover,
+.button-order:focus {
+    background-color: #188CE8;
+}
 
 /* features */
 .features {
